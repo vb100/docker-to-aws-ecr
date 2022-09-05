@@ -21,7 +21,7 @@ label_name = sess.get_outputs()[0].name
 # API endpoints
 @app.get('/')
 def index():
-	return {'Hello': 'Welcome to the Weather application!'}
+	return {'Hello': 'Welcome to the Weather application (v1)!'}
 
 @app.post('/predict')
 def predict_weather(data: WeatherVariables):
